@@ -1,77 +1,86 @@
-# AI 全栈成长路线
+任何好的想法欢迎提issue/pr
 
-目标:12 周形成 AI 全栈最小闭环,之后持续在一个方向打深。
+初步计划：
+1. [directions](directions/README.md) — AI 全栈方向。
+2. [papers](papers/README.md) — 必读论文。
+3. [books](books/README.md) — 书籍。
+4. [repos](repos/README.md) — GitHub 仓库。
+5. [blogs](blogs/README.md) — 博客与网站。
+6. [videos](videos/README.md) — 视频与课程。
+7. [plan](roadmap.md) — 12 周执行路线。
+8. [people](people/README.md) — 值得关注的人。
 
-## 原则
+## 学习顺序
 
-- 每周交付一个可见产物:代码、评测表、笔记、demo、复现报告。
-- 每个阶段都同时看五件事:数据、算法、模型、硬件、架构。
-- 不只收藏资料,要把资料变成实验记录和作品集。
+1. 数据采集、清洗、标注、评测集 — [data.md](directions/data.md)
+2. 线性代数、概率统计、优化方法 — [Mathematics for Machine Learning](https://mml-book.github.io)
+3. 经典机器学习、指标、baseline — [CS229](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
+4. PyTorch、autograd、训练循环 — [Dive into Deep Learning](https://d2l.ai)
+5. 反向传播最小实现 — [micrograd](https://github.com/karpathy/micrograd)
+6. 深度学习核心结构 — [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
+7. Attention 与 Transformer — [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+8. BERT / GPT / LLaMA 语言模型主线 — [papers](papers/README.md)
+9. 从零训练小 GPT — [nanoGPT](https://github.com/karpathy/nanoGPT)
+10. 从零写 LLM — [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
+11. LoRA / QLoRA / SFT / DPO 微调 — [model.md](directions/model.md)
+12. RAG、embedding、向量检索、rerank — [rag.md](directions/rag.md)
+13. Agent、工具调用、工作流编排 — [agents.md](directions/agents.md)
+14. 多模态、CV、语音、扩散模型 — [directions](directions/README.md)
+15. GPU、CUDA、显存、KV Cache — [hardware.md](directions/hardware.md)
+16. FlashAttention、vLLM、llama.cpp 推理优化 — [systems-infra.md](directions/systems-infra.md)
+17. API、评测、监控、MLOps、成本控制 — [architecture.md](directions/architecture.md)
+18. 完成一个可展示项目:数据集 + 模型/RAG + 服务 + 评测 — [roadmap.md](roadmap.md)
 
-## 0-2 周:地基
+## 五层能力
 
-| 任务 | 产物 |
-| --- | --- |
-| 学 PyTorch 张量、autograd、Dataset/DataLoader | 一个二分类/回归训练脚本 |
-| 补线代、概率、优化基础 | 公式 + 代码小抄 |
-| 跑通经典 ML baseline | sklearn notebook |
-| 学 train/val/test 和指标 | 一个评测表 |
+1. **数据**:采集、清洗、标注、切分、评测、反馈闭环。
+2. **算法**:数学、优化、机器学习、深度学习、检索、强化学习。
+3. **模型**:Transformer、LLM、多模态、扩散、微调、对齐。
+4. **硬件**:GPU、CUDA、显存、量化、并行、推理加速。
+5. **架构**:RAG、Agent、API、MLOps、评测、监控、上线。
 
-重点资料: [Mathematics for Machine Learning](https://mml-book.github.io)、[Dive into Deep Learning](https://d2l.ai)、[CS229](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)。
+## 资料列表
 
-## 3-5 周:模型
+### 数据
 
-| 任务 | 产物 |
-| --- | --- |
-| 手写 micrograd 或 tiny Transformer | 最小反向传播/Attention 实现 |
-| 读 Attention、BERT、GPT-3、LoRA | 论文卡片 |
-| 跑 nanoGPT 或 LLMs-from-scratch | loss 曲线 + 采样结果 |
-| 用 LoRA 微调小模型 | 微调报告 |
+1. [Hugging Face Datasets](https://huggingface.co/docs/datasets)
+2. [Data-Centric AI](https://dcai.csail.mit.edu/)
+3. [Label Studio](https://github.com/HumanSignal/label-studio)
+4. [FAISS](https://github.com/facebookresearch/faiss)
 
-重点资料: [nanoGPT](https://github.com/karpathy/nanoGPT)、[LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)、[Attention Is All You Need](https://arxiv.org/abs/1706.03762)。
+### 算法
 
-## 6-8 周:应用架构
+1. [Mathematics for Machine Learning](https://mml-book.github.io)
+2. [CS229](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
+3. [Dive into Deep Learning](https://d2l.ai)
+4. [micrograd](https://github.com/karpathy/micrograd)
+5. [scikit-learn](https://github.com/scikit-learn/scikit-learn)
 
-| 任务 | 产物 |
-| --- | --- |
-| 清洗自己的文章/笔记数据 | Markdown 数据集 |
-| 搭建 RAG:切块、embedding、检索、引用 | 个人知识库问答 demo |
-| 加评测:golden set、命中率、人工评分 | RAG eval 表 |
-| 做 API + 简单 UI | 可演示应用 |
+### 模型
 
-重点资料: [llama_index](https://github.com/run-llama/llama_index)、[langchain](https://github.com/langchain-ai/langchain)、[Designing ML Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/)。
+1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+2. [BERT](https://arxiv.org/abs/1810.04805)
+3. [GPT-3](https://arxiv.org/abs/2005.14165)
+4. [LLaMA](https://arxiv.org/abs/2302.13971)
+5. [LoRA](https://arxiv.org/abs/2106.09685)
+6. [QLoRA](https://arxiv.org/abs/2305.14314)
+7. [nanoGPT](https://github.com/karpathy/nanoGPT)
+8. [transformers](https://github.com/huggingface/transformers)
 
-## 9-10 周:硬件与推理
+### 硬件
 
-| 任务 | 产物 |
-| --- | --- |
-| 学 GPU/CUDA 基础和显存估算 | 显存估算笔记 |
-| 用 vLLM 或 llama.cpp 部署模型 | 本地推理服务 |
-| 测试 FP16/INT8/INT4 | 速度-显存-质量对比表 |
-| 了解 FlashAttention、KV Cache、batching | 推理优化笔记 |
+1. [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/)
+2. [GPU MODE](https://github.com/gpu-mode/lectures)
+3. [FlashAttention](https://arxiv.org/abs/2205.14135)
+4. [vLLM](https://github.com/vllm-project/vllm)
+5. [llama.cpp](https://github.com/ggml-org/llama.cpp)
+6. [Triton](https://github.com/triton-lang/triton)
 
-重点资料: [vLLM](https://github.com/vllm-project/vllm)、[llama.cpp](https://github.com/ggml-org/llama.cpp)、[GPU MODE](https://github.com/gpu-mode/lectures)。
+### 架构
 
-## 11-12 周:整合作品
-
-做一个可以放进作品集的完整项目:
-
-- 数据:有自己的数据集、清洗脚本、评测集。
-- 算法:至少有一个自己实现或改造的核心模块。
-- 模型:使用 RAG、微调、多模态或 Agent 中的一种能力。
-- 硬件:有部署方案、性能指标、成本估算。
-- 架构:有 API、日志、评测、监控和 README。
-
-候选项目:
-
-- 个人 AI 学习助手:对自己的笔记、文章、仓库做 RAG + Agent。
-- 论文精读助手:arXiv 抓取、总结、引用定位、复现 checklist。
-- AI 代码教练:读取代码仓库,生成学习路线、测试题和改进建议。
-- 多模态知识库:图片/截图/文章统一检索和问答。
-
-## 长期节奏
-
-- 每天:读 1 篇短文或论文摘要,记录 3 个要点。
-- 每周:复现 1 个模块或做 1 个实验。
-- 每月:完成 1 篇系统总结或 1 个可演示 demo。
-- 每季度:选一个方向深入,例如 LLM 系统、RAG/Agent、多模态、强化学习、端侧推理。
+1. [AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
+2. [Designing ML Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/)
+3. [llama_index](https://github.com/run-llama/llama_index)
+4. [langchain](https://github.com/langchain-ai/langchain)
+5. [MLflow](https://github.com/mlflow/mlflow)
+6. [open-webui](https://github.com/open-webui/open-webui)

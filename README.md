@@ -1,91 +1,149 @@
 #  AI-wiki
 
-Interstellar: **数据、算法、模型、硬件、架构**。
+- 资料整理和学习笔记
+- Interstellar: **数据、算法、模型、硬件、架构**
 
-如果你想系统成为 AI 高手,请按以下顺序学习和实践。
+搜索了一下，目前市面上没有比较符合思路的整理，计划9月构建完本仓库[roadmap](./roadmap.md), 好的资料/笔记欢迎提交 pr，可以私信我加aiwiki交流群(｀・ω・´)
 
-## 学习顺序
 
-1. 数据采集、清洗、标注、评测集 — [data.md](directions/data.md)
-2. 线性代数、概率统计、优化方法 — [Mathematics for Machine Learning](https://mml-book.github.io)
-3. 经典机器学习、指标、baseline — [CS229](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
-4. PyTorch、autograd、训练循环 — [Dive into Deep Learning](https://d2l.ai)
-5. 反向传播最小实现 — [micrograd](https://github.com/karpathy/micrograd)
-6. 深度学习核心结构 — [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
-7. Attention 与 Transformer — [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-8. BERT / GPT / LLaMA 语言模型主线 — [papers](papers/README.md)
-9. 从零训练小 GPT — [nanoGPT](https://github.com/karpathy/nanoGPT)
-10. 从零写 LLM — [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
-11. LoRA / QLoRA / SFT / DPO 微调 — [model.md](directions/model.md)
-12. RAG、embedding、向量检索、rerank — [rag.md](directions/rag.md)
-13. Agent、工具调用、工作流编排 — [agents.md](directions/agents.md)
-14. 多模态、CV、语音、扩散模型 — [directions](directions/README.md)
-15. GPU、CUDA、显存、KV Cache — [hardware.md](directions/hardware.md)
-16. FlashAttention、vLLM、llama.cpp 推理优化 — [systems-infra.md](directions/systems-infra.md)
-17. API、评测、监控、MLOps、成本控制 — [architecture.md](directions/architecture.md)
-18. 完成一个可展示项目:数据集 + 模型/RAG + 服务 + 评测 — [roadmap.md](roadmap.md)
+- [Course](#course)
+  - [LLM](#llm)
+  - [Agent](#agent)
+- [Blog](#blog)
+  - [FlashAttention](#flashattention)
+  - [Harness Engineering](#harness-engineering)
+  - [Quantization](#quantization)
+  - [Speculative Decoding Blog](#speculative-decoding-blog)
+  - [CUDA](#cuda)
+- [Book](#book)
+- [Paper](#paper)
+  - [Base Model](#base-model)
+  - [Fine-tuning](#fine-tuning)
+  - [Attention Optimization](#attention-optimization)
+  - [Speculative Decoding](#speculative-decoding)
+  - [KV Cache & Inference Storage](#kv-cache--inference-storage)
+  - [Prefill-Decode Disaggregation](#prefill-decode-disaggregation)
+  - [LLM Application & Prompt Engineering](#llm-application--prompt-engineering)
+  - [MoE Mixture of Experts](#moe-mixture-of-experts)
+  - [Scheduling & Batching](#scheduling--batching)
+  - [Training Optimization & Scaling](#training-optimization--scaling)
 
-## 五层能力
+## 一、Course
+### LLM
+- [CS224n](#)
+- [CS336: Language Modeling from Scratch (Stanford / Spring 2026)](#)
+- [CSCI 1390, Spring 2025: Systems for Machine Learning](#)
 
-1. **数据**:采集、清洗、标注、切分、评测、反馈闭环。
-2. **算法**:数学、优化、机器学习、深度学习、检索、强化学习。
-3. **模型**:Transformer、LLM、多模态、扩散、微调、对齐。
-4. **硬件**:GPU、CUDA、显存、量化、并行、推理加速。
-5. **架构**:RAG、Agent、API、MLOps、评测、监控、上线。
+### Agent
+- [从零开始理解 Agent](#)
+- [Learn Claude Code](#)
 
-## 资料列表
+## 2、Paper
+### 底座
+[PaLM](#)，[OPT](#)，[BLOOM](#)，[LLaMA](#)
 
-### 数据
+### 微调
+* 对齐微调: [InstructGPT (RLHF)](#)，[Constitutional AI](#)，[Self-Instruct](#)，[Direct Preference Optimization (DPO)](#)，[ORPO](#)，[GRPO](#)
 
-1. [Hugging Face Datasets](https://huggingface.co/docs/datasets)
-2. [Data-Centric AI](https://dcai.csail.mit.edu/)
-3. [Label Studio](https://github.com/HumanSignal/label-studio)
-4. [FAISS](https://github.com/facebookresearch/faiss)
+* 轻量化微调: [LoRA](#)，[QLoRA](#)
 
-### 算法
+### Attention 优化
+- [FlashAttention](#)
+- [FlashAttention-2](#)
+- [RoPE (Rotary Position Embeddings)](#)
+- [ALiBi](#)
+- [Multi-Query Attention (MQA)](#)
+- [Grouped-Query Attention (GQA)](#)
 
-1. [Mathematics for Machine Learning](https://mml-book.github.io)
-2. [CS229](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
-3. [Dive into Deep Learning](https://d2l.ai)
-4. [micrograd](https://github.com/karpathy/micrograd)
-5. [scikit-learn](https://github.com/scikit-learn/scikit-learn)
+### 推测解码
+- [Speculative Decoding](#)
+- [Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads](#)
+- [Fast Inference from Transformers via Speculative Decoding](#)
+- [Break the Sequential Dependency of LLM Inference Using Lookahead Decoding](#)
+- [Accelerating Large Language Model Decoding with Speculative Sampling](#)
 
-### 模型
+### KV Cache & 推理存储
+- [PagedAttention (vLLM)](#)
+- [Efficient Memory Management for Large Language Model Serving with PagedAttention](#)
+- [KV Cache Compression & Optimization](#)
 
-1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-2. [BERT](https://arxiv.org/abs/1810.04805)
-3. [GPT-3](https://arxiv.org/abs/2005.14165)
-4. [LLaMA](https://arxiv.org/abs/2302.13971)
-5. [LoRA](https://arxiv.org/abs/2106.09685)
-6. [QLoRA](https://arxiv.org/abs/2305.14314)
-7. [nanoGPT](https://github.com/karpathy/nanoGPT)
-8. [transformers](https://github.com/huggingface/transformers)
+### PD 分离
+- [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](#)
+- [Splitwise: Efficient Generative LLM Inference Using Phase Splitting](#)
+- [DualPath: Breaking the Storage Bandwidth Bottleneck in Agentic LLM Inference](#)
+- [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](#)
+- [MemServe: Context Caching for Disaggregated LLM Serving with Elastic Memory Pool](#)
+- [TetriInfer: Inference without Interference: Disaggregate LLM Inference for Mixed Downstream Workloads](#)
 
-### 硬件
+### LLM 应用与提示工程
+- [Retrieval-Augmented Generation (RAG)](#)
+- [METIS: Fast Quality-Aware RAG Systems with Configuration Adaptation](#)
+- [CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion](#)
+- [Parrot: Efficient Serving of LLM-based Applications with Semantic Variable](#)
+- [Towards End-to-End Optimization of LLM-based Applications with Ayo](#)
+- [Chain-of-Thought Prompting](#)
+- [Tree of Thoughts](#)
+- [ReAct](#)
 
-1. [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/)
-2. [GPU MODE](https://github.com/gpu-mode/lectures)
-3. [FlashAttention](https://arxiv.org/abs/2205.14135)
-4. [vLLM](https://github.com/vllm-project/vllm)
-5. [llama.cpp](https://github.com/ggml-org/llama.cpp)
-6. [Triton](https://github.com/triton-lang/triton)
+### MoE 混合专家
+- [Mixture of Experts (Switch Transformer)](#)
+- [DeepSeekMoE](#)
 
-### 架构
+### 调度与批处理
+- [DeepSpeed-FastGen: High-throughput Text Generation for LLMs](#)
+- [SARATHI: Efficient LLM Inference by Piggybacking Decodes with Chunked Prefills](#)
+- [Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve](#)
 
-1. [AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
-2. [Designing ML Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/)
-3. [llama_index](https://github.com/run-llama/llama_index)
-4. [langchain](https://github.com/langchain-ai/langchain)
-5. [MLflow](https://github.com/mlflow/mlflow)
-6. [open-webui](https://github.com/open-webui/open-webui)
+### 训练优化与缩放
+- [Test-Time Scaling](#)
+- [Muon Optimizer](#)
 
-## 仓库索引
+## 3、Blog
+### FlashAttention
+- [ELI5: FlashAttention](#)
+- [FlashAttention from First Principles](#)
+- [Flash Attention 2.0 with Tri Dao (author)!](#)
+- [FlashAttention学习过程【详】解](#)
+- [FlashAttention — Visually and Exhaustively Explained](#)
+- [Designing Hardware-Aware Algorithms: FlashAttention](#)
+- [FlashAttention: Fast and Memory-Efficient Exact Attention With IO-Awareness](#)
 
-1. [directions](directions/README.md) — AI 全栈方向。
-2. [roadmap](roadmap.md) — 12 周执行路线。
-3. [papers](papers/README.md) — 必读论文。
-4. [books](books/README.md) — 书籍。
-5. [repos](repos/README.md) — GitHub 仓库。
-6. [blogs](blogs/README.md) — 博客与网站。
-7. [videos](videos/README.md) — 视频与课程。
-8. [people](people/README.md) — 值得关注的人。
+### Harness Engineering
+设计环境、规则、测试反馈系统，让 AI Agent 自动生成并改进代码
+- [Minions: Stripe’s one-shot, end-to-end coding agents—Part 2](#)
+- [Effective harnesses for long-running agents](#)
+- [Minions: Stripe’s one-shot, end-to-end coding agents](#)
+- [Harness engineering: leveraging Codex in an agent-first world](#)
+- [Vibe Coding AReaL：零手打代码开发分布式 RL 训练框架](#)
+
+### Triton
+- [Deep Dive into Triton Internals (Part 3)](#)
+- [Deep Dive into Triton Internals (Part 1)](#)
+- [Deep Dive into Triton Internals (Part 2)](#)
+
+### vLLM
+- [vLLM源码解析](#)
+- [Inside vLLM: Anatomy of a High-Throughput LLM Inference System](#)
+
+### GPU
+- [A history of NVidia Stream Multiprocessor](#)
+- [Building a Tiny GPU to Understand AI Hardware Engineering](#)
+
+### CUTLASS
+- [Learn CUTLASS the hard way - part 2!](#)
+- [Learn CUTLASS the hard way! (Video)](#)
+
+### 量化
+- [PyTorch 的量化实战项目](#)
+- [PyTorch 官方量化资料](#)
+
+### 推测解码
+- [How Speculative Decoding Boosts vLLM Performance by up to 2.8x](#)
+
+### CUDA
+- [LeetCUDA](https://github.com/xlite-dev/LeetCUDA)
+- [How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance: a Worklog](#)
+
+## 4、Book
+- [Build a Large Language Model (From Scratch)](#)
+- [AI Systems Performance Engineering](#)：GPU CUDA Kernel 调优、PyTorch 算法优化、多节点训练推理系统调优...
