@@ -1,48 +1,91 @@
-# Interstellar · AI 全栈学习思路
+# Interstellar · AI 全栈
 
-目标:成为能理解原理、训练模型、部署系统、追踪前沿并做出作品的 AI 全栈工程师。
+AI 全栈: **数据、算法、模型、硬件、架构**。
 
-AI 全栈不是只会调 API,而是把 **数据、算法、模型、硬件、架构** 串成一条闭环:
+如果你想系统成为 AI 高手,请按以下顺序学习和实践。
 
-```text
-数据 -> 算法 -> 模型 -> 硬件 -> 架构 -> 产品/研究反馈 -> 数据
-```
+## 学习顺序
 
-## 五大能力柱
+1. 数据采集、清洗、标注、评测集 — [data.md](directions/data.md)
+2. 线性代数、概率统计、优化方法 — [Mathematics for Machine Learning](https://mml-book.github.io)
+3. 经典机器学习、指标、baseline — [CS229](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
+4. PyTorch、autograd、训练循环 — [Dive into Deep Learning](https://d2l.ai)
+5. 反向传播最小实现 — [micrograd](https://github.com/karpathy/micrograd)
+6. 深度学习核心结构 — [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
+7. Attention 与 Transformer — [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+8. BERT / GPT / LLaMA 语言模型主线 — [papers](papers/README.md)
+9. 从零训练小 GPT — [nanoGPT](https://github.com/karpathy/nanoGPT)
+10. 从零写 LLM — [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
+11. LoRA / QLoRA / SFT / DPO 微调 — [model.md](directions/model.md)
+12. RAG、embedding、向量检索、rerank — [rag.md](directions/rag.md)
+13. Agent、工具调用、工作流编排 — [agents.md](directions/agents.md)
+14. 多模态、CV、语音、扩散模型 — [directions](directions/README.md)
+15. GPU、CUDA、显存、KV Cache — [hardware.md](directions/hardware.md)
+16. FlashAttention、vLLM、llama.cpp 推理优化 — [systems-infra.md](directions/systems-infra.md)
+17. API、评测、监控、MLOps、成本控制 — [architecture.md](directions/architecture.md)
+18. 完成一个可展示项目:数据集 + 模型/RAG + 服务 + 评测 — [roadmap.md](roadmap.md)
 
-| 主线 | 你要掌握什么 | 能做出的东西 |
-| --- | --- | --- |
-| [数据](directions/data.md) | 数据采集、清洗、标注、评估集、向量化、数据飞轮 | 一个可持续迭代的数据集和评测面板 |
-| [算法](directions/algorithm.md) | 数学、优化、经典 ML、深度学习、RL、检索算法 | 从零实现训练/推理/搜索核心模块 |
-| [模型](directions/model.md) | Transformer、LLM、多模态、扩散、微调、对齐 | 训练或微调一个能解决真实任务的模型 |
-| [硬件](directions/hardware.md) | GPU、CUDA、显存、量化、并行、推理加速 | 把模型跑得更快、更省、更稳定 |
-| [架构](directions/architecture.md) | RAG、Agent、服务化、MLOps、评测、监控 | 一个可上线、可观测、可迭代的 AI 应用 |
+## 五层能力
 
-## 推荐路线
+1. **数据**:采集、清洗、标注、切分、评测、反馈闭环。
+2. **算法**:数学、优化、机器学习、深度学习、检索、强化学习。
+3. **模型**:Transformer、LLM、多模态、扩散、微调、对齐。
+4. **硬件**:GPU、CUDA、显存、量化、并行、推理加速。
+5. **架构**:RAG、Agent、API、MLOps、评测、监控、上线。
 
-1. **第 1 阶段:补地基** — Python/PyTorch、线代概率、经典 ML、训练一个小模型。
-2. **第 2 阶段:读懂模型** — Transformer、BERT/GPT、LoRA、RAG、评测。
-3. **第 3 阶段:做出作品** — 选一个真实场景,完成数据集、微调/RAG、API、前端或机器人入口。
-4. **第 4 阶段:深入系统** — vLLM/llama.cpp、量化、KV Cache、并发、GPU 性能分析。
-5. **第 5 阶段:追前沿** — 每周读论文、复现关键模块、写总结、把想法变成 demo。
+## 资料列表
 
-执行版见 [roadmap.md](roadmap.md)。
+### 数据
 
-## 资料库
+1. [Hugging Face Datasets](https://huggingface.co/docs/datasets)
+2. [Data-Centric AI](https://dcai.csail.mit.edu/)
+3. [Label Studio](https://github.com/HumanSignal/label-studio)
+4. [FAISS](https://github.com/facebookresearch/faiss)
 
-每条一行:`名称 — 价值`。⭐ = 起点。
+### 算法
 
-- [directions/](directions/) — AI 全栈主线 + LLM / 多模态 / 扩散 / RL·RLHF / 智能体 / RAG / CV / 语音 / 系统部署专题
-- [papers/](papers/README.md) — 必读论文(按主题,含 arXiv)
-- [books/](books/README.md) — 书籍(多数免费在线)
-- [people/](people/README.md) — 值得关注的人
-- [videos/](videos/README.md) — YouTube 频道与课程
-- [blogs/](blogs/README.md) — 博客与网站
-- [repos/](repos/README.md) — GitHub 仓库
+1. [Mathematics for Machine Learning](https://mml-book.github.io)
+2. [CS229](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
+3. [Dive into Deep Learning](https://d2l.ai)
+4. [micrograd](https://github.com/karpathy/micrograd)
+5. [scikit-learn](https://github.com/scikit-learn/scikit-learn)
 
-## 学习方法
+### 模型
 
-- 每周只抓一个主题:读 1 篇综述/教材章节,看 1 个实现,做 1 个小实验,写 1 页总结。
-- 任何知识都落到一个产物:代码、笔记、评测表、架构图、复现报告或 demo。
-- 学模型时顺手学数据和评测;学应用时顺手学部署和监控;学系统时顺手看硬件瓶颈。
-- 不追求一次学完,追求形成循环:问题 -> 资料 -> 实验 -> 记录 -> 改进。
+1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+2. [BERT](https://arxiv.org/abs/1810.04805)
+3. [GPT-3](https://arxiv.org/abs/2005.14165)
+4. [LLaMA](https://arxiv.org/abs/2302.13971)
+5. [LoRA](https://arxiv.org/abs/2106.09685)
+6. [QLoRA](https://arxiv.org/abs/2305.14314)
+7. [nanoGPT](https://github.com/karpathy/nanoGPT)
+8. [transformers](https://github.com/huggingface/transformers)
+
+### 硬件
+
+1. [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/)
+2. [GPU MODE](https://github.com/gpu-mode/lectures)
+3. [FlashAttention](https://arxiv.org/abs/2205.14135)
+4. [vLLM](https://github.com/vllm-project/vllm)
+5. [llama.cpp](https://github.com/ggml-org/llama.cpp)
+6. [Triton](https://github.com/triton-lang/triton)
+
+### 架构
+
+1. [AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
+2. [Designing ML Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/)
+3. [llama_index](https://github.com/run-llama/llama_index)
+4. [langchain](https://github.com/langchain-ai/langchain)
+5. [MLflow](https://github.com/mlflow/mlflow)
+6. [open-webui](https://github.com/open-webui/open-webui)
+
+## 仓库索引
+
+1. [directions](directions/README.md) — AI 全栈方向。
+2. [roadmap](roadmap.md) — 12 周执行路线。
+3. [papers](papers/README.md) — 必读论文。
+4. [books](books/README.md) — 书籍。
+5. [repos](repos/README.md) — GitHub 仓库。
+6. [blogs](blogs/README.md) — 博客与网站。
+7. [videos](videos/README.md) — 视频与课程。
+8. [people](people/README.md) — 值得关注的人。
