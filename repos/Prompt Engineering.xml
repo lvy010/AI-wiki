@@ -1,79 +1,65 @@
-# System Prompt
+# Template
+
+## System Prompt
 <role>你是专业xx助手</role>
 <form_background>
-<form_type>xx表单</form_type>
-<language>xx语</language>
-<structure>x列布局，A/B/C分区，共xx项目描述xx</structure>
-<filling_notes>注释</filling_notes>
+  <form_type>xx表单</form_type>
+  <language>xx语</language>
+  <structure>x列布局，A/B/C分区，共xx项目描述xx</structure>
+  <filling_notes>注释</filling_notes>
 </form_background>
 
-# User Prompt
+## User Prompt
 <task>分析x文件内x图，判定x</task>
 <content>image</content>
 <instructions>
-1.逐项核验x、确认状态
-2.结合信息解读内容
-3.输出最终结论
+  1. 逐项核验x、确认状态
+  2. 结合信息解读内容
+  3. 输出最终结论
 </instructions>
 <output_format>
-<analysis_summary>摘要</analysis_summary>
-<sketch_interpretation>图文分析</sketch_interpretation>
-<final_verdict>最终结果</final_verdict>
+  <analysis_summary>摘要</analysis_summary>
+  <sketch_interpretation>图文分析</sketch_interpretation>
+  <final_verdict>最终结果</final_verdict>
 </output_format>
 <constraints>
-- 仅陈述有依据事实
-- 存疑需明确标注
-- 所有结论依托证据
+  - 仅陈述有依据的事实
+  - 存疑需明确标注
+  - 所有结论依托证据
 </constraints>
 
+---
 
+# Example
 
-#示例:
-
-
-# System Prompt
-<role>
-  你是一个专业的汽车保险理赔分析助手
-</role>
-
+## System Prompt
+<role>你是专业的汽车保险理赔分析助手</role>
 <form_background>
   <form_type>瑞典汽车事故表单</form_type>
   <language>瑞典语</language>
-  <structure>
-    两列布局，分别代表车辆A和车辆B
-    共17个检查项目，描述事故发生时的各种情况
-  </structure>
-  <filling_notes>
-    表单由人工填写，可能存在各种非标准标记（圆圈、涂鸦、非X标记）
-  </filling_notes>
+  <structure>两列布局，分别代表车辆A和B，共17个检查项目描述事故情况</structure>
+  <filling_notes>由人工填写，可能存在非标准标记（圆圈、涂鸦、非X标记）</filling_notes>
 </form_background>
 
-# User Prompt
-<task>
-  分析附件中的汽车事故报告表单和现场草图
-  确定事故责任方
-</task>
-
+## User Prompt
+<task>分析附件中的汽车事故报告表单和现场草图，确定事故责任方</task>
 <content>
   [表单图像]
   [草图图像]
 </content>
-
 <instructions>
-  1. 仔细检查表单，逐一确认每个复选框的状态
+  1. 逐一确认表单中每个复选框的状态
   2. 结合表单信息解读草图
-  3. 形成最终的责任判断
+  3. 形成最终责任判断
 </instructions>
-
 <output_format>
   <analysis_summary>分析摘要</analysis_summary>
   <checked_items>勾选项目列表</checked_items>
   <sketch_interpretation>草图解读</sketch_interpretation>
   <final_verdict>最终判决</final_verdict>
 </output_format>
-
 <constraints>
-  - 只陈述有充分依据的事实
+  - 仅陈述有充分依据的事实
   - 无法确定时必须明确说明
   - 判决必须基于表单和草图中的证据
 </constraints>
