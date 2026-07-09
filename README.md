@@ -40,7 +40,7 @@
 
 ## 2、Paper
 ### 底座
-[PaLM](#)，[OPT](#)，[BLOOM](#)，[LLaMA](#)
+[PaLM](https://arxiv.org/abs/2204.02311)，[OPT](https://arxiv.org/abs/2205.01068)，[BLOOM](https://arxiv.org/abs/2211.05100)，[LLaMA](https://arxiv.org/abs/2302.13971)
 
 ### 微调
 * 对齐微调: [InstructGPT (RLHF)](#)，[Constitutional AI](#)，[Self-Instruct](#)，[Direct Preference Optimization (DPO)](#)，[ORPO](#)，[GRPO](#)
