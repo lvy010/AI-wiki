@@ -68,12 +68,12 @@
 - [KV Cache Compression & Optimization](https://arxiv.org/abs/2306.14048)
 
 ### PD 分离
-- [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](#)
-- [Splitwise: Efficient Generative LLM Inference Using Phase Splitting](#)
-- [DualPath: Breaking the Storage Bandwidth Bottleneck in Agentic LLM Inference](#)
-- [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](#)
-- [MemServe: Context Caching for Disaggregated LLM Serving with Elastic Memory Pool](#)
-- [TetriInfer: Inference without Interference: Disaggregate LLM Inference for Mixed Downstream Workloads](#)
+- [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](https://arxiv.org/abs/2407.00079)
+- [Splitwise: Efficient Generative LLM Inference Using Phase Splitting](https://arxiv.org/abs/2311.18677)
+- [DualPath: Breaking the Storage Bandwidth Bottleneck in Agentic LLM Inference](https://arxiv.org/abs/2504.03065)
+- [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://arxiv.org/abs/2401.09670)
+- [MemServe: Context Caching for Disaggregated LLM Serving with Elastic Memory Pool](https://arxiv.org/abs/2406.17565)
+- [TetriInfer: Inference without Interference: Disaggregate LLM Inference for Mixed Downstream Workloads](https://arxiv.org/abs/2401.11181)
 
 ### LLM 应用与提示工程
 - [Retrieval-Augmented Generation (RAG)](#)
