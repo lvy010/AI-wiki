@@ -63,9 +63,9 @@
 - [Accelerating Large Language Model Decoding with Speculative Sampling](https://arxiv.org/abs/2302.01318)
 
 ### KV Cache & 推理存储
-- [PagedAttention (vLLM)](#)
-- [Efficient Memory Management for Large Language Model Serving with PagedAttention](#)
-- [KV Cache Compression & Optimization](#)
+- [PagedAttention (vLLM)](https://arxiv.org/abs/2309.06180)
+- [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180)
+- [KV Cache Compression & Optimization](https://arxiv.org/abs/2306.14048)
 
 ### PD 分离
 - [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](#)
