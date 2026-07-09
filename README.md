@@ -48,12 +48,12 @@
 * 轻量化微调: [LoRA](https://arxiv.org/abs/2106.09685)，[QLoRA](https://arxiv.org/abs/2305.14314)
 
 ### Attention 优化
-- [FlashAttention](#)
-- [FlashAttention-2](#)
-- [RoPE (Rotary Position Embeddings)](#)
-- [ALiBi](#)
-- [Multi-Query Attention (MQA)](#)
-- [Grouped-Query Attention (GQA)](#)
+- [FlashAttention](https://arxiv.org/abs/2205.14135)
+- [FlashAttention-2](https://arxiv.org/abs/2307.08691)
+- [RoPE (Rotary Position Embeddings)](https://arxiv.org/abs/2104.09864)
+- [ALiBi](https://arxiv.org/abs/2108.12409)
+- [Multi-Query Attention (MQA)](https://arxiv.org/abs/1911.02150)
+- [Grouped-Query Attention (GQA)](https://arxiv.org/abs/2305.13245)
 
 ### 推测解码
 - [Speculative Decoding](#)
