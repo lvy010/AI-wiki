@@ -30,13 +30,13 @@
 
 ## 一、Course
 ### LLM
-- [CS224n](#)
-- [CS336: Language Modeling from Scratch (Stanford / Spring 2026)](#)
-- [CSCI 1390, Spring 2025: Systems for Machine Learning](#)
+- [CS224n](https://web.stanford.edu/class/cs224n/)
+- [CS336: Language Modeling from Scratch (Stanford / Spring 2026)](http://cs336.stanford.edu/spring2025/)
+- [CSCI 1390, Spring 2025: Systems for Machine Learning](https://systems-for-ml.github.io/spring2025/)
 
 ### Agent
 - [从零开始理解 Agent](#)
-- [Learn Claude Code](#)
+- [Learn Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)
 
 ## 2、Paper
 ### 底座
