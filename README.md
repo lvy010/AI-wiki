@@ -76,14 +76,14 @@
 - [TetriInfer: Inference without Interference: Disaggregate LLM Inference for Mixed Downstream Workloads](https://arxiv.org/abs/2401.11181)
 
 ### LLM 应用与提示工程
-- [Retrieval-Augmented Generation (RAG)](#)
-- [METIS: Fast Quality-Aware RAG Systems with Configuration Adaptation](#)
-- [CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion](#)
-- [Parrot: Efficient Serving of LLM-based Applications with Semantic Variable](#)
-- [Towards End-to-End Optimization of LLM-based Applications with Ayo](#)
-- [Chain-of-Thought Prompting](#)
-- [Tree of Thoughts](#)
-- [ReAct](#)
+- [Retrieval-Augmented Generation (RAG)](https://arxiv.org/abs/2005.11401)
+- [METIS: Fast Quality-Aware RAG Systems with Configuration Adaptation](https://arxiv.org/abs/2412.08629)
+- [CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion](https://arxiv.org/abs/2405.16444)
+- [Parrot: Efficient Serving of LLM-based Applications with Semantic Variable](https://arxiv.org/abs/2405.19888)
+- [Towards End-to-End Optimization of LLM-based Applications with Ayo](https://arxiv.org/abs/2412.13529)
+- [Chain-of-Thought Prompting](https://arxiv.org/abs/2201.11903)
+- [Tree of Thoughts](https://arxiv.org/abs/2305.10601)
+- [ReAct](https://arxiv.org/abs/2210.03629)
 
 ### MoE 混合专家
 - [Mixture of Experts (Switch Transformer)](#)
