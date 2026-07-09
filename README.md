@@ -56,11 +56,11 @@
 - [Grouped-Query Attention (GQA)](https://arxiv.org/abs/2305.13245)
 
 ### 推测解码
-- [Speculative Decoding](#)
-- [Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads](#)
-- [Fast Inference from Transformers via Speculative Decoding](#)
-- [Break the Sequential Dependency of LLM Inference Using Lookahead Decoding](#)
-- [Accelerating Large Language Model Decoding with Speculative Sampling](#)
+- [Speculative Decoding](https://arxiv.org/abs/2302.01318)
+- [Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads](https://arxiv.org/abs/2401.10774)
+- [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192)
+- [Break the Sequential Dependency of LLM Inference Using Lookahead Decoding](https://arxiv.org/abs/2402.02057)
+- [Accelerating Large Language Model Decoding with Speculative Sampling](https://arxiv.org/abs/2302.01318)
 
 ### KV Cache & 推理存储
 - [PagedAttention (vLLM)](#)
