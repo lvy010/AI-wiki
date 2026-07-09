@@ -43,9 +43,9 @@
 [PaLM](https://arxiv.org/abs/2204.02311)，[OPT](https://arxiv.org/abs/2205.01068)，[BLOOM](https://arxiv.org/abs/2211.05100)，[LLaMA](https://arxiv.org/abs/2302.13971)
 
 ### 微调
-* 对齐微调: [InstructGPT (RLHF)](#)，[Constitutional AI](#)，[Self-Instruct](#)，[Direct Preference Optimization (DPO)](#)，[ORPO](#)，[GRPO](#)
+* 对齐微调: [InstructGPT (RLHF)](https://arxiv.org/abs/2203.02155)，[Constitutional AI](https://arxiv.org/abs/2212.08073)，[Self-Instruct](https://arxiv.org/abs/2212.10560)，[Direct Preference Optimization (DPO)](https://arxiv.org/abs/2305.18290)，[ORPO](https://arxiv.org/abs/2403.07691)，[GRPO](https://arxiv.org/abs/2402.03300)
 
-* 轻量化微调: [LoRA](#)，[QLoRA](#)
+* 轻量化微调: [LoRA](https://arxiv.org/abs/2106.09685)，[QLoRA](https://arxiv.org/abs/2305.14314)
 
 ### Attention 优化
 - [FlashAttention](#)
