@@ -100,13 +100,13 @@
 
 ## 3、Blog
 ### FlashAttention
-- [ELI5: FlashAttention](#)
-- [FlashAttention from First Principles](#)
-- [Flash Attention 2.0 with Tri Dao (author)!](#)
+- [ELI5: FlashAttention](https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad)
+- [FlashAttention from First Principles](https://www.cerebras.ai/blog/flash-attention-from-first-principles)
+- [Flash Attention 2.0 with Tri Dao (author)!](https://www.youtube.com/watch?v=IoMSGuiwV3g)
 - [FlashAttention学习过程【详】解](#)
 - [FlashAttention — Visually and Exhaustively Explained](#)
 - [Designing Hardware-Aware Algorithms: FlashAttention](#)
-- [FlashAttention: Fast and Memory-Efficient Exact Attention With IO-Awareness](#)
+- [FlashAttention: Fast and Memory-Efficient Exact Attention With IO-Awareness](https://arxiv.org/abs/2205.14135)
 
 ### Harness Engineering
 设计环境、规则、测试反馈系统，让 AI Agent 自动生成并改进代码
