@@ -123,27 +123,27 @@
 
 ### vLLM
 - [vLLM源码解析](#)
-- [Inside vLLM: Anatomy of a High-Throughput LLM Inference System](#)
+- [Inside vLLM: Anatomy of a High-Throughput LLM Inference System](https://vllm.ai/blog/2025-09-05-anatomy-of-vllm)
 
 ### GPU
-- [A history of NVidia Stream Multiprocessor](#)
-- [Building a Tiny GPU to Understand AI Hardware Engineering](#)
+- [A history of NVidia Stream Multiprocessor](https://fabiensanglard.net/cuda/index.html)
+- [Building a Tiny GPU to Understand AI Hardware Engineering](https://github.com/adam-maj/tiny-gpu)
 
 ### CUTLASS
 - [Learn CUTLASS the hard way - part 2!](#)
 - [Learn CUTLASS the hard way! (Video)](#)
 
 ### 量化
-- [PyTorch 的量化实战项目](#)
-- [PyTorch 官方量化资料](#)
+- [PyTorch 的量化实战项目](https://github.com/pytorch/ao)
+- [PyTorch 官方量化资料](https://pytorch.org/docs/stable/quantization.html)
 
 ### 推测解码
-- [How Speculative Decoding Boosts vLLM Performance by up to 2.8x](#)
+- [How Speculative Decoding Boosts vLLM Performance by up to 2.8x](https://vllm.ai/blog/2024-10-17-spec-decode)
 
 ### CUDA
 - [LeetCUDA](https://github.com/xlite-dev/LeetCUDA)
-- [How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance: a Worklog](#)
+- [How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance: a Worklog](https://siboehm.com/articles/22/CUDA-MMM)
 
 ## 4、Book
-- [Build a Large Language Model (From Scratch)](#)
-- [AI Systems Performance Engineering](#)：GPU CUDA Kernel 调优、PyTorch 算法优化、多节点训练推理系统调优...
+- [Build a Large Language Model (From Scratch)](https://www.manning.com/books/build-a-large-language-model-from-scratch)
+- [AI Systems Performance Engineering](https://github.com/stas00/ml-engineering)：GPU CUDA Kernel 调优、PyTorch 算法优化、多节点训练推理系统调优...
