@@ -86,17 +86,17 @@
 - [ReAct](https://arxiv.org/abs/2210.03629)
 
 ### MoE 混合专家
-- [Mixture of Experts (Switch Transformer)](#)
-- [DeepSeekMoE](#)
+- [Mixture of Experts (Switch Transformer)](https://arxiv.org/abs/2101.03961)
+- [DeepSeekMoE](https://arxiv.org/abs/2401.06066)
 
 ### 调度与批处理
-- [DeepSpeed-FastGen: High-throughput Text Generation for LLMs](#)
-- [SARATHI: Efficient LLM Inference by Piggybacking Decodes with Chunked Prefills](#)
-- [Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve](#)
+- [DeepSpeed-FastGen: High-throughput Text Generation for LLMs](https://arxiv.org/abs/2401.08671)
+- [SARATHI: Efficient LLM Inference by Piggybacking Decodes with Chunked Prefills](https://arxiv.org/abs/2308.16369)
+- [Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve](https://arxiv.org/abs/2403.02310)
 
 ### 训练优化与缩放
-- [Test-Time Scaling](#)
-- [Muon Optimizer](#)
+- [Test-Time Scaling](https://arxiv.org/abs/2408.03314)
+- [Muon Optimizer](https://arxiv.org/abs/2502.16982)
 
 ## 3、Blog
 ### FlashAttention
