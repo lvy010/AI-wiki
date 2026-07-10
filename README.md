@@ -110,9 +110,9 @@
 
 ### Harness Engineering
 设计环境、规则、测试反馈系统，让 AI Agent 自动生成并改进代码
-- [Minions: Stripe’s one-shot, end-to-end coding agents—Part 2](#)
+- [Minions: Stripe’s one-shot, end-to-end coding agents—Part 2](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2)
 - [Effective harnesses for long-running agents](#)
-- [Minions: Stripe’s one-shot, end-to-end coding agents](#)
+- [Minions: Stripe’s one-shot, end-to-end coding agents](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents)
 - [Harness engineering: leveraging Codex in an agent-first world](#)
 - [Vibe Coding AReaL：零手打代码开发分布式 RL 训练框架](#)
 
