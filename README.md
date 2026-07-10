@@ -117,9 +117,9 @@
 - [Vibe Coding AReaL：零手打代码开发分布式 RL 训练框架](#)
 
 ### Triton
-- [Deep Dive into Triton Internals (Part 3)](#)
-- [Deep Dive into Triton Internals (Part 1)](#)
-- [Deep Dive into Triton Internals (Part 2)](#)
+- [Deep Dive into Triton Internals (Part 3)](https://www.kapilsharma.dev/posts/deep-dive-into-triton-internals-3/)
+- [Deep Dive into Triton Internals (Part 1)](https://www.kapilsharma.dev/posts/deep-dive-into-triton-internals/)
+- [Deep Dive into Triton Internals (Part 2)](https://www.kapilsharma.dev/posts/deep-dive-into-triton-internals-2/)
 
 ### vLLM
 - [vLLM源码解析](#)
