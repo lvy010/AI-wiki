@@ -8,17 +8,14 @@
 参考资料见文末Resources
 
 ## 目录
-
 - [Course](#course)
   - [计算机视觉基础](#cv-course)
   - [Transformer 与多模态基础](#multimodal-course)
 - [Concept](#concept)
   - [VLM 基本架构](#vlm-architecture)
   - [视频理解与视频推理](#video-understanding)
-  - [Streaming Video Understanding](#streaming-definition)
 - [Paper](#paper)
   - [VLM 基座](#vlm-foundation)
-  - [Video-LLM 基座](#video-llm)
   - [视频推理](#video-reasoning)
   - [主动交互：When to Speak](#proactive-interaction)
   - [长期记忆](#long-term-memory)
@@ -27,8 +24,6 @@
 - [Benchmark](#benchmark)
 - [Dataset](#dataset)
 - [Project](#project)
-- [Survey](#survey)
-- [Blog](#blog)
 - [Book](#book)
 - [学习路线](#roadmap)
 - [Resources](#resources)
