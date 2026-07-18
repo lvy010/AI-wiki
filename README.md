@@ -1,10 +1,7 @@
 #  AI-wiki
-
-- 资料整理和学习笔记
 - Interstellar: **数据、算法、模型、硬件、架构**
 
-搜索了一下，目前市面上没有比较符合思路的整理，计划9月构建完本仓库[roadmap](./roadmap.md), 好的资料/笔记欢迎提交 pr，可以私信我加aiwiki交流群(｀・ω・´)
-
+Work in progress：[CS336-Lab](./CS336-Lab/README.md)：Stanford CS336 Course Notes & Assignments
 
 - [Course](#course)
   - [LLM](#llm)
@@ -27,6 +24,8 @@
   - [MoE Mixture of Experts](#moe-mixture-of-experts)
   - [Scheduling & Batching](#scheduling--batching)
   - [Training Optimization & Scaling](#training-optimization--scaling)
+
+计划9月构建完本仓库[roadmap](./roadmap.md), 好的资料/笔记欢迎提交 pr
 
 ## 一、Course
 ### LLM
