@@ -99,9 +99,9 @@ Work in progress：[CS336-Lab](./cs336-lab/README.md)：Stanford CS336 Course No
 
 ## 3、Blog
 ### FlashAttention
-- [ELI5: FlashAttention](#)
+- [ELI5: FlashAttention](https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad)
 - [FlashAttention from First Principles](#)
-- [Flash Attention 2.0 with Tri Dao (author)!](#)
+- [Flash Attention 2.0 with Tri Dao (author)!](https://www.latent.space/p/flashattention)
 - [FlashAttention学习过程【详】解](#)
 - [FlashAttention — Visually and Exhaustively Explained](#)
 - [Designing Hardware-Aware Algorithms: FlashAttention](#)
@@ -116,17 +116,17 @@ Work in progress：[CS336-Lab](./cs336-lab/README.md)：Stanford CS336 Course No
 - [Vibe Coding AReaL：零手打代码开发分布式 RL 训练框架](#)
 
 ### Triton
-- [Deep Dive into Triton Internals (Part 3)](#)
-- [Deep Dive into Triton Internals (Part 1)](#)
-- [Deep Dive into Triton Internals (Part 2)](#)
+- [Deep Dive into Triton Internals (Part 3)](https://www.kapilsharma.dev/posts/deep-dive-into-triton-internals-3/)
+- [Deep Dive into Triton Internals (Part 1)](https://www.kapilsharma.dev/posts/deep-dive-into-triton-internals/)
+- [Deep Dive into Triton Internals (Part 2)](https://www.kapilsharma.dev/posts/deep-dive-into-triton-internals-2/)
 
 ### vLLM
 - [vLLM源码解析](#)
 - [Inside vLLM: Anatomy of a High-Throughput LLM Inference System](https://vllm.ai/blog/2025-09-05-anatomy-of-vllm)
 
 ### GPU
-- [A history of NVidia Stream Multiprocessor](#)
-- [Building a Tiny GPU to Understand AI Hardware Engineering](#)
+- [A history of NVidia Stream Multiprocessor](https://fabiensanglard.net/cuda/)
+- [Building a Tiny GPU to Understand AI Hardware Engineering](https://github.com/adam-maj/tiny-gpu)
 
 ### CUTLASS
 - [Learn CUTLASS the hard way - part 2!](#)
