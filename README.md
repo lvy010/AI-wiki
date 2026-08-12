@@ -1,6 +1,8 @@
 #  AI-wiki
 - Interstellar: **数据、算法、模型、硬件、架构**
 
+序言: 这个时代壁垒是什么? 全局思维，或者说设计架构的能力，模型架构 系统架构 芯片架构等等。我觉得未来更考验知识的广度，就是全栈思维，从算法到系统到硬件，因为某一个东西的具体深入大模型都有很强的能力，就好比有一句话“这个问题或许我不知道怎么解，但是我知道应该找什么来解”。所以多接触多学习更广的知识内容。
+
 Work in progress：[CS336-Lab](./cs336-lab/README.md)：Stanford CS336 Course Notes & Assignments
 
 - [Course](#course)
