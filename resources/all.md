@@ -21,12 +21,13 @@
 15. [CV](#cv) — [directions/cv.md](directions/cv.md)
 16. [Speech](#speech) — [directions/speech.md](directions/speech.md)
 17. [Systems](#systems) — [directions/systems-infra.md](directions/systems-infra.md)
-18. [Papers](#papers) — [papers/README.md](papers/README.md)
-19. [Books](#books) — [books/README.md](books/README.md)
-20. [Repos](#repos) — [repos/README.md](repos/README.md)
-21. [Blogs](#blogs) — [blogs/README.md](blogs/README.md)
-22. [Videos](#videos) — [videos/README.md](videos/README.md)
-23. [People](#people) — [people/README.md](people/README.md)
+18. [RSI](#rsi) — [directions/rsi.md](directions/rsi.md)
+19. [Papers](#papers) — [papers/README.md](papers/README.md)
+20. [Books](#books) — [books/README.md](books/README.md)
+21. [Repos](#repos) — [repos/README.md](repos/README.md)
+22. [Blogs](#blogs) — [blogs/README.md](blogs/README.md)
+23. [Videos](#videos) — [videos/README.md](videos/README.md)
+24. [People](#people) — [people/README.md](people/README.md)
 
 ---
 
@@ -235,10 +236,23 @@
 - [diffusion-genai.md](directions/diffusion-genai.md) — 生成与扩散:图像/视频/音频生成。
 - [rl-rlhf.md](directions/rl-rlhf.md) — 强化学习与对齐:RL、RLHF/DPO、推理模型。
 - [agents.md](directions/agents.md) — 智能体:工具使用、规划、多智能体。
+- [rsi.md](directions/rsi.md) — 递归自我改进:自修改、自训练、harness、环境演化与 researcher loop。
 - [rag.md](directions/rag.md) — 检索增强:RAG、向量检索、知识注入。
 - [cv.md](directions/cv.md) — 计算机视觉:分类/检测/分割/自监督。
 - [speech.md](directions/speech.md) — 语音:ASR/TTS/音频。
 - [systems-infra.md](directions/systems-infra.md) — 系统与部署:量化、推理引擎、边缘端。
+
+---
+
+<a id="rsi"></a>
+
+## RSI
+
+来源:[directions/rsi.md](directions/rsi.md)
+
+# 递归自我改进（RSI）
+
+完整专题见 [directions/rsi.md](directions/rsi.md)，研究目录见 [Awesome RSI](../../awesome-rsi/README_zh.md)。
 
 ---
 

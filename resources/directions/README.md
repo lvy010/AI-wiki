@@ -17,6 +17,7 @@
 - [diffusion-genai.md](diffusion-genai.md) — 生成与扩散:图像/视频/音频生成。
 - [rl-rlhf.md](rl-rlhf.md) — 强化学习与对齐:RL、RLHF/DPO、推理模型。
 - [agents.md](agents.md) — 智能体:工具使用、规划、多智能体。
+- [rsi.md](rsi.md) — 递归自我改进:自修改、自训练、harness、环境演化与 researcher loop
 - [rag.md](rag.md) — 检索增强:RAG、向量检索、知识注入。
 - [cv.md](cv.md) — 计算机视觉:分类/检测/分割/自监督。
 - [speech.md](speech.md) — 语音:ASR/TTS/音频。

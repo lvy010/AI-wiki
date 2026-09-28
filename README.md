@@ -4,6 +4,8 @@
 
 序言: 这个时代壁垒是什么? 全局思维，或者说设计架构的能力，模型架构 系统架构 芯片架构等等。未来更考验知识的广度，就是全栈思维，从算法到系统到硬件，因为某一个东西的具体深入大模型都有很强的能力，就好比有一句话“这个问题或许不知道怎么解，但是我知道应该找什么来解”。所以多接触多学习更广的知识内容。
 
+
+
 skill: [agent-insight](./agent-insight)
 
 - [Course](#course)
@@ -27,6 +29,7 @@ skill: [agent-insight](./agent-insight)
   - [MoE Mixture of Experts](#moe-mixture-of-experts)
   - [Scheduling & Batching](#scheduling--batching)
   - [Training Optimization & Scaling](#training-optimization--scaling)
+- [Recursive Self-Improvement](./resources/directions/rsi.md)
 
 计划9月构建完本仓库[roadmap](./roadmap.md), 好的资料/笔记欢迎提交 pr
 
