@@ -21,6 +21,7 @@
 - [Meta AI](https://ai.meta.com/blog/) — Llama/开源。
 
 ## Newsletter
+- [AI Weekly](https://aiweekly.co/) — 追踪 AI 专家与机构正在阅读和分享的内容，解读模型、Agent、研究与政策动态。
 - [The Batch](https://www.deeplearning.ai/the-batch/) — 每周要闻。
 - [Import AI](https://importai.substack.com) — 政策+研究。
 - [HF Daily Papers](https://huggingface.co/papers) — 每日论文热榜。
