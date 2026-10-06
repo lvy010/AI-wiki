@@ -43,7 +43,7 @@ skill: [agent-insight](./agent-insight)
 
 ### Agent
 
-- [从零开始理解 Agent](#)
+- [从零开始理解 Agent](https://bbs.huaweicloud.com/blogs/476265)
 - [Learn Claude Code](#)
 
 ## 2、Paper
@@ -123,9 +123,9 @@ skill: [agent-insight](./agent-insight)
 - [ELI5: FlashAttention](https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad)
 - [FlashAttention from First Principles](#)
 - [Flash Attention 2.0 with Tri Dao (author)!](https://www.latent.space/p/flashattention)
-- [FlashAttention学习过程【详】解](#)
-- [FlashAttention — Visually and Exhaustively Explained](#)
-- [Designing Hardware-Aware Algorithms: FlashAttention](#)
+- [图解大模型计算加速系列：FlashAttention V1，从硬件到计算逻辑](https://zhuanlan.zhihu.com/p/669926191)
+- [FlashAttention — Visually and Exhaustively Explained](https://aiadvances.org/flashattention-visually-and-exhaustively-explained-d6124670f7fb)
+- [Designing Hardware-Aware Algorithms: FlashAttention](https://www.digitalocean.com/community/tutorials/flashattention)
 - [FlashAttention: Fast and Memory-Efficient Exact Attention With IO-Awareness](https://arxiv.org/abs/2205.14135)
 
 ### Harness Engineering
@@ -133,10 +133,10 @@ skill: [agent-insight](./agent-insight)
 设计环境、规则、测试反馈系统，让 AI Agent 自动生成并改进代码
 
 - [Minions: Stripe’s one-shot, end-to-end coding agents—Part 2](#)
-- [Effective harnesses for long-running agents](#)
+- [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
 - [Minions: Stripe’s one-shot, end-to-end coding agents](#)
-- [Harness engineering: leveraging Codex in an agent-first world](#)
-- [Vibe Coding AReaL：零手打代码开发分布式 RL 训练框架](#)
+- [Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/)
+- [Vibe Coding AReaL：零手打代码开发分布式 RL 训练框架](https://zhuanlan.zhihu.com/p/2003269671630165191)
 
 ### Triton
 
@@ -146,7 +146,7 @@ skill: [agent-insight](./agent-insight)
 
 ### vLLM
 
-- [vLLM源码解析](#)
+- [vLLM源码解析](https://zhuanlan.zhihu.com/p/691045737)
 - [Inside vLLM: Anatomy of a High-Throughput LLM Inference System](https://vllm.ai/blog/2025-09-05-anatomy-of-vllm)
 
 ### GPU
@@ -156,8 +156,8 @@ skill: [agent-insight](./agent-insight)
 
 ### CUTLASS
 
-- [Learn CUTLASS the hard way - part 2!](#)
-- [Learn CUTLASS the hard way! (Video)](#)
+- [Learn CUTLASS the hard way - part 2!](https://kapilsh.github.io/posts/learn-cutlass-the-hard-way-2/)
+- [Learn CUTLASS the hard way! (Video)](https://www.youtube.com/watch?v=jGouxuAHIfQ)
 
 ### 量化
 
